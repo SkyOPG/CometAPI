@@ -4,4 +4,4 @@ api.py
 .env
 node_modules
 __pycache__
-src/config/config.ts
+src/config/conf.ts

@@ -1,6 +1,6 @@
 import mongo from 'mongoose';
 import { ConnectOptions } from 'mongoose';
-import conf from '../config/config.js';
+import conf from '../config/conf.js';
 
 const options = {
     keepAlive: true,
