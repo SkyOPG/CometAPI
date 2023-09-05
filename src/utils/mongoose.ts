@@ -1,5 +1,6 @@
 import mongo from 'mongoose';
 import { ConnectOptions } from 'mongoose';
+import conf from '../config/config.js';
 
 const options = {
     keepAlive: true,
@@ -8,7 +9,7 @@ const options = {
 } as ConnectOptions;
 
 export const initDB = async (): Promise<void> => {
-    await mongo.connect("mongodb+srv://SkyOPG:EabVEDQlrTxIbwoi@skydb.rmbte6x.mongodb.net/?retryWrites=true&w=majority", options).then(a => {
+    await mongo.connect(conf.url, options).then(a => {
         console.log("Database is ready!");
     }).catch(e => {
         console.log("an error just occured while settin up the database: "+e.stack);
