@@ -1,0 +1,6 @@
+out
+test.js
+api.py
+.env
+node_modules
+__pycache__
